@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="talend-ipaas-flow-2.13.6" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0 http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <feature name='jackson-databind' version='2.17.1'>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.17.1</bundle>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-annotations/2.17.1</bundle>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-databind/2.17.1</bundle>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.17.1</bundle>
+    </feature>
+    <feature name='jackson-jaxrs-json-provider' version='2.17.1'>
+        <feature version='2.17.1'>jackson-databind</feature>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.17.1</bundle>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.17.1</bundle>
+    </feature>
+
+
+    <feature name='tipaas-common' version='2.13.6'>
+        <feature version='2.17.1'>jackson-databind</feature>
+        <feature version='3.6.3'>cxf-jaxrs</feature>
+        <feature version='3.6.3'>cxf-features-logging</feature>
+        <bundle dependency="true">mvn:com.google.code.gson/gson/2.11.0</bundle>
+        <bundle dependency="true">mvn:io.reactivex.rxjava2/rxjava/2.2.21</bundle>
+        <bundle dependency="true">mvn:org.reactivestreams/reactive-streams/1.0.3</bundle>
+        <bundle>mvn:org.glassfish/javax.json/1.1.4</bundle><!-- TPOPS-2722 - fix CXF bundles refresh with installing 'observability-appender-tcp' feature -->
+        <bundle>mvn:joda-time/joda-time/2.8.1</bundle><!-- TPOPS-3150 - fix 'pairing-agent' stopping after RE pairing -->
+        <bundle>mvn:org.talend.ipaas/flow-model/2.13.6</bundle>
+        <bundle>mvn:org.talend.ipaas.engine-infra/engine-infra-common/2.13.6</bundle>
+    </feature>
+
+
+    <feature name='tipaas-keypair-manager' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.keypair.manager.cfg">mvn:org.talend.ipaas.engine/keypair-manager/2.13.6/cfg/org.talend.ipaas.rt.keypair.manager</configfile>
+        <config name="org.talend.ipaas.rt.keypair.manager">keypair.save=true
+
+# key-pair storage directory
+keypair.dir=${karaf.etc}/keystores/
+
+# whether to use secured keystore for key-pair
+keypair.use.keystore=true
+
+# keystore type: PKCS12 or JCEKS
+keypair.keystore.type=PKCS12
+
+# Password used to encrypt keystore. Do not change it after key-pair was generated!
+keypair.keystore.password=${env:ORG_TALEND_IPAAS_RT_KEYPAIR_MANAGER_KEYPAIR_KEYSTORE_PASSWORD}
+</config>
+        <bundle>wrap:mvn:org.talend.platform.sdk/crypto-common/5.10.1$Bundle-SymbolicName=org.talend.platform.sdk.crypto-common&amp;Bundle-Version=5.10.1</bundle>
+        <bundle>mvn:org.talend.ipaas.engine/keypair-manager/2.13.6</bundle>
+    </feature>
+
+
+    <feature name='tipaas-amqsource' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.eventsource.amq.cfg">mvn:org.talend.ipaas.engine-infra/amqsource-engine/2.13.6/cfg/org.talend.ipaas.rt.eventsource.amq</configfile>
+        <config name="org.talend.ipaas.rt.eventsource.amq">activemq.broker.url=failover:(tcp://localhost:61616?wireFormat.host=localhost)?jms.prefetchPolicy.queuePrefetch=100
+activemq.broker.username=
+activemq.broker.password=
+
+activemq.broker.maximumRedeliveries=6
+activemq.broker.useExponentialBackOff=true
+
+log.messages=false
+
+# reconnect delay, in seconds
+failure.reconnect.delay=30
+</config>
+        <feature>tipaas-common</feature>
+        <feature version='5.18.4'>activemq-client</feature>
+        <bundle>mvn:org.talend.ipaas.engine-infra/amqsource-engine/2.13.6</bundle>
+        <bundle>mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1</bundle>
+    </feature>
+
+
+    <feature name='tipaas-dispatcher-engine' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.dispatcher.client.cfg">mvn:org.talend.ipaas.engine-infra/dispatcher-engine/2.13.6/cfg/org.talend.ipaas.rt.dispatcher.client</configfile>
+        <config name="org.talend.ipaas.rt.dispatcher.client">dispatcher.response.queue=ipaas.talend.dispatcher.response.queue
+</config>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-amqsource</feature>
+        <bundle>mvn:org.talend.ipaas.engine-infra/dispatcher-engine/2.13.6</bundle>
+    </feature>
+
+
+    <feature name='tipaas-data-transfer-engine' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.dts.client.cfg">mvn:org.talend.ipaas.engine-infra/data-transfer-engine/2.13.6/cfg/org.talend.ipaas.rt.dts.client</configfile>
+        <config name="org.talend.ipaas.rt.dts.client">dts.service.url=http://dts/data-transfer-service
+</config>
+        <feature version='3.6.3'>cxf-jaxrs</feature>
+        <feature>tipaas-common</feature>
+        <feature version='2.17.1'>jackson-jaxrs-json-provider</feature>
+        <bundle>mvn:org.talend.ipaas.engine-infra/data-transfer-engine/2.13.6</bundle>
+    </feature>
+
+
+    <feature name='tipaas-pairing-service-common' version='2.13.6'>
+        <feature version='3.6.3'>cxf-jaxrs</feature>
+        <feature>tipaas-common</feature>
+        <bundle>mvn:org.talend.ipaas.engine-infra/pairing-common/2.13.6</bundle>
+    </feature>
+
+    <feature name='tipaas-flow-container-common' version='2.13.6'>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-flow-api</feature>
+        <feature>tipaas-box-token-generator</feature>
+
+        <bundle dependency='true'>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+        <bundle dependency="true">mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle dependency="true">mvn:com.google.guava/guava/33.2.1-jre</bundle>
+
+        <feature>tipaas-pairing-service-common</feature>
+        <bundle>mvn:org.talend.ipaas.engine/engine-container-common/2.13.6</bundle>
+    </feature>
+
+    <feature name='tipaas-observability' version='2.13.6'>
+        <feature>tipaas-flow-container-common</feature>
+        <bundle dependency='true'>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.17.1</bundle>
+
+        <configfile finalname="/etc/org.talend.ipaas.rt.observability.cfg">mvn:org.talend.ipaas.engine/observability/2.13.6/cfg/org.talend.ipaas.rt.observability</configfile>
+        <config name="org.talend.ipaas.rt.observability">omc.enabled=false
+omc.re.enabled=false
+omc.jobs.enabled=false
+# Operating System and Hardware Information
+omc.oshi.enabled=false
+omc.apm.enabled=false
+omc.appender.rest.enabled=false
+omc.appender.prometheus.enabled=false
+omc.appender.tcp.enabled=false</config>
+        <config name="org.talend.ipaas.rt.observability.omc">omc.host=localhost
+omc.push.frequency_ms=10000
+omc.jvm.allowlist=</config>
+        <config name="org.talend.ipaas.rt.observability.jobContextConfig">karaf/workspaceName=false
+karaf/environmentId=false
+karaf/environmentName=false
+karaf/environmentVersion=false
+karaf/clusterId=false
+karaf/clusterName=false
+karaf/planExecutionId=false
+karaf/planId=false
+karaf/planName=false
+karaf/planStepExecutionId=false
+karaf/planStepId=false
+karaf/planStepName=false
+karaf/triggerTimestamp=false
+karaf/artifactName=false
+karaf/artifactVersion=false
+karaf/taskName=false
+karaf/taskVersion=false
+karaf/compatibilityVersion=false
+karaf/runType=false
+karaf/countOfAttempts=false</config>
+        <bundle>mvn:org.talend.ipaas.engine/observability/2.13.6</bundle>
+    </feature>
+
+    <feature name='tipaas-observability-metrics-client' version="1.2.19">
+        <feature>jackson-databind</feature>
+
+        <bundle dependency='true'>mvn:io.prometheus/simpleclient/0.9.0</bundle>
+        <bundle dependency='true'>mvn:io.prometheus/simpleclient_hotspot/0.9.0</bundle>
+        <bundle dependency='true'>mvn:com.google.code.findbugs/jsr305/3.0.2</bundle>
+        <bundle dependency="true">mvn:com.google.guava/failureaccess/1.0.1</bundle>
+        <bundle dependency="true">mvn:com.google.guava/guava/33.2.1-jre</bundle>
+
+        <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.17.1</bundle>
+        <bundle>mvn:org.talend.observability/observability-metrics-common/1.2.19</bundle>
+        <bundle>mvn:org.talend.observability/observability-metrics-client/1.2.19</bundle>
+    </feature>
+
+    <feature name='tipaas-deployment-agent' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.deployment.agent.cfg">mvn:org.talend.ipaas.engine/deployment-agent/2.13.6/cfg/org.talend.ipaas.rt.deployment.agent</configfile>
+        <config name="org.talend.ipaas.rt.deployment.agent">account.id=TestAccountId
+container.id=TestContainerId
+
+# Queues
+queue.input.name=ipaas.container.TestAccountId.TestContainerId.input
+queue.input.consumers.count=2
+
+# Interval in seconds that send container status to the Dispatcher
+status.update.interval=60
+status.jobserver.info=false
+
+# In seconds
+wait.for.connection.parameters.timeout=300
+flow.deployment.timeout=300
+
+rejected.rows.file.size.max=2097152
+
+# deployment agent will send all exceeding flows for rescheduling
+# use 0 or lower for infinite number of flows - no limit
+max.deployed.flows=3
+
+# allow parallel executions of the same task on an engine in cluster
+cluster.engine.same.task.parallel.run=false
+
+# karaf maven data cleaner configurations, use 0 days interval to disable cleaner
+# local.maven.clean.interval.days=0
+# local.maven.clean.max.gb.size=8
+# local.maven.clean.older.than.days=7
+
+# engine environment (CPU/Memory/Disk) statistic logging
+env.stat.log.enabled=true
+env.stat.log.warn.cpu.level.pct=80
+env.stat.log.error.cpu.level.pct=95
+env.stat.log.warn.memory.free.mb=1024
+env.stat.log.error.memory.free.mb=512
+env.stat.log.warn.disk.free.mb=1024
+env.stat.log.error.disk.free.mb=512
+</config>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-flow-container-common</feature>
+        <feature>tipaas-keypair-manager</feature>
+        <feature>tipaas-amqsource</feature>
+        <feature>tipaas-flow-api</feature>
+        <feature>tipaas-dispatcher-engine</feature>
+        <feature>tipaas-data-transfer-engine</feature>
+        <feature>tipaas-observability-metrics-client</feature>
+        <!-- set only dataservice runner API bundle as dependency -->
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-common/2.13.6</bundle>
+        <bundle>mvn:org.talend.ipaas.engine/deployment-agent/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-box-token-generator" version="2.13.6">
+        <feature version='3.22.2'>camel-box</feature>
+        <feature>tipaas-flow-api</feature>
+        <bundle>mvn:org.talend.ipaas.engine.tokens/box-token-generator/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-flow-api" version="2.13.6">
+        <feature version='3.6.3'>cxf-jaxrs</feature>
+        <bundle>mvn:org.talend.ipaas.engine/flow-api/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-job-controller" version="2.13.6">
+        <configfile finalname="/etc/org.talend.ipaas.rt.jobserver.client.cfg">mvn:org.talend.ipaas.engine/tipaas-jobserver-client/2.13.6/cfg/org.talend.ipaas.rt.jobserver.client</configfile>
+        <config name="org.talend.ipaas.rt.jobserver.client"># The levels are (in ascending importance order): TRACE, DEBUG, INFO, WARN, ERROR and FATAL.
+job.log.level=INFO
+
+job.log.server.host=localhost
+
+#
+# This property allows the usage of logging configuration defined with Studio
+# which is embedded in the job archive file when published in TMC.
+# Warning :
+# In this usage case, customer configuration will replace the default TMC
+# configuration. Logging messages won&#39;t be published anymore in TMC
+# infrastructure and in monitoring logging system.
+#
+job.log.config.embedded=false
+
+# This property enables job execution FATAL log level in task logs
+# (if disabled FATAL job log messages are presented as ERROR ones)
+job.log.fatal.level=true
+
+# Task execution files cleaner configurations, use 0 days interval to disable cleaner
+tasks.logs.clean.interval.days=1
+tasks.logs.clean.older.than.days=30
+
+#
+# This property activates sensitive values hiding mechanism in logs.
+# All words equals to a sensitive value will be automatically replaced by the mask &quot;***&quot;
+#
+job.log.msg.sensitive.hidden=true
+</config>
+        <feature>tipaas-flow-container-common</feature>
+        <bundle>mvn:org.talend.ipaas.engine/tipaas-jobserver-client/2.13.6</bundle>
+    </feature>
+
+    <feature name='tipaas-pairing-service-client' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.pairing.client.cfg">mvn:org.talend.ipaas.engine.pairing/pairing-service-client/2.13.6/cfg/org.talend.ipaas.rt.pairing.client</configfile>
+        <config name="org.talend.ipaas.rt.pairing.client">pairing.service.url=https://pair.us.cloud.talend.com
+</config>
+        <feature version='3.6.3'>cxf-jaxrs</feature>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-pairing-service-common</feature>
+        <bundle>mvn:org.talend.ipaas.engine.pairing/pairing-service-client/2.13.6</bundle>
+    </feature>
+
+    <feature name='tipaas-pairing-agent' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.pairing.agent.cfg">mvn:org.talend.ipaas.engine.pairing/pairing-agent/2.13.6/cfg/org.talend.ipaas.rt.pairing.agent</configfile>
+        <configfile finalname="/etc/preauthorized.key.cfg">mvn:org.talend.ipaas.engine.pairing/pairing-agent/2.13.6/cfg/preauthorized.key</configfile>
+        <config name="org.talend.ipaas.rt.pairing.agent">remote.engine.id=
+
+# in seconds
+# Do not set heart interval to more than 180 seconds(3 mins).
+# If Talend Cloud does not receive a heartbeat from the Remote Engine
+# for more than 3 mins, it will show the Remote Engine&#39;s status as unavailable.
+heartbeat.interval=60
+</config>
+        <feature>http-whiteboard</feature>
+        <feature version='5.18.4'>activemq-client</feature>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-flow-container-common</feature>
+        <feature>tipaas-keypair-manager</feature>
+        <feature>tipaas-pairing-service-client</feature>
+        <feature>tipaas-amqsource</feature>
+        <feature version='5.18.4'>activemq-http</feature>
+        <!-- send shutdown on destroy -->
+        <bundle start-level='85'>mvn:org.talend.ipaas.engine.pairing/pairing-agent/2.13.6</bundle>
+        <bundle>mvn:org.talend.ipaas.engine.heartbeat/heartbeat-scheduler/2.13.6</bundle>
+        <requirement>osgi.implementation;osgi.implementation="osgi.http";version:Version="1.1"</requirement>
+    </feature>
+
+    <feature name='tipaas-heartbeat-sender-cloud' version='2.13.6'>
+        <configfile finalname="/etc/org.talend.ipaas.rt.heartbeat.sender.cloud.cfg">mvn:org.talend.ipaas.engine.heartbeat/heartbeat-sender-cloud/2.13.6/cfg/org.talend.ipaas.rt.heartbeat.sender.cloud</configfile>
+        <config name="org.talend.ipaas.rt.heartbeat.sender.cloud">account.id=TestAccountId
+container.id=TestContainerId
+
+# in seconds
+heartbeat.interval=180
+
+# reconnect delay, in seconds
+failure.reconnect.delay=30
+</config>
+        <feature>tipaas-common</feature>
+        <feature>tipaas-dispatcher-engine</feature>
+        <feature>tipaas-flow-container-common</feature>
+        <feature>tipaas-keypair-manager</feature>
+        <feature>tipaas-amqsource</feature>
+        <bundle>mvn:org.talend.ipaas.engine.heartbeat/heartbeat-sender-cloud/2.13.6</bundle>
+        <bundle>mvn:org.talend.ipaas.engine.heartbeat/heartbeat-scheduler/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-logs-cloud-storage" version='2.13.6'>
+        <feature>tipaas-common</feature>
+        <bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.17.1</bundle>
+
+        <configfile finalname="/etc/org.talend.ipaas.rt.logs.cfg">mvn:org.talend.ipaas.engine/logs-cloud-storage/2.13.6/cfg/org.talend.ipaas.rt.logs</configfile>
+        <config name="org.talend.ipaas.rt.logs"># First batch of logs will be sent each xx seconds. Should be between 5 seconds and 55 seconds.
+# Set to 0 or below to deactivate preview
+logs.preview.timeout.seconds=10
+
+account.access.key=
+account.secret.key=
+target.url=https://localhost
+bucket.name=bucket
+</config>
+        <bundle>mvn:org.talend.ipaas.engine/logs-cloud-storage/2.13.6</bundle>
+    </feature>
+
+    <feature name='activemq-http' version='5.18.4'>
+        <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.16</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.14</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7</bundle>
+        <!--bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlpull/1.1.3.4a_1</bundle-->
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.20_1</bundle>
+        <!-- bundle>mvn:org.apache.activemq/activemq-http/5.18.4</bundle -->
+    </feature>
+
+    <feature name='tipaas-logging' version='2.13.6'>
+        <feature>jackson-databind</feature>
+        <bundle>mvn:org.ops4j.pax.logging/pax-logging-log4j2-extra/2.2.7</bundle>
+    </feature>
+
+    <feature name='tipaas-remote-engine' version='2.13.6'>
+        <feature version='5.18.4'>activemq-http</feature>
+        <feature>tipaas-deployment-agent</feature>
+        <feature>tipaas-job-controller</feature>
+        <feature>tipaas-data-service-runner</feature>
+        <feature>tipaas-logs-cloud-storage</feature>
+    </feature>
+
+    <feature name='tipaas-cloud-engine' version='2.13.6'>
+        <feature version='5.18.4'>activemq-http</feature>
+        <feature>tipaas-heartbeat-sender-cloud</feature>
+        <feature>tipaas-deployment-agent</feature>
+        <feature>tipaas-job-controller</feature>
+        <feature>tipaas-observability</feature>
+        <feature>tipaas-logs-cloud-storage</feature>
+    </feature>
+
+    <feature name="talend-job-server-client">
+        <configfile finalname="/etc/org.talend.ipaas.rt.job.commandline.handler.cfg">mvn:org.talend.ipaas.engine/job-commandline-handler/2.13.6/cfg/org.talend.ipaas.rt.job.commandline.handler</configfile>
+        <config name="org.talend.ipaas.rt.job.commandline.handler">${org.talend.ipaas.rt.job.commandline.handler.cfg}</config>
+
+        <bundle>mvn:commons-codec/commons-codec/1.17.0</bundle>
+        <bundle>mvn:commons-io/commons-io/2.16.1</bundle>
+        <bundle>mvn:org.apache.commons/commons-lang3/3.14.0</bundle>
+        <bundle>mvn:org.apache.commons/commons-text/1.12.0</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ant/1.10.12_1</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_3</bundle>
+
+        <bundle>mvn:org.talend.jobserver/org.talend.remote.commons/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.jobserver/org.talend.remote.client/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.jobserver/org.talend.remote.jobserver.commons/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.jobserver/org.talend.remote.jobserver.client/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.jobserver/org.talend.monitoring/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.jobserver/org.talend.monitoring.client/8.0.2.20240507_1504_patch</bundle>
+        <bundle>mvn:org.talend.ipaas.engine/job-commandline-handler/2.13.6</bundle>
+    </feature>
+
+    <feature name="talend-job-server-signature-verifier-disabler">
+        <bundle>mvn:org.talend.jobserver/org.talend.remote.jobserver.server.signature/8.0.2.20240507_1504_patch</bundle>
+    </feature>
+
+    <feature name="tipaas-data-service-runner" version="2.13.6">
+        <!-- dataservice-runner-common -->
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-common/2.13.6</bundle>
+
+        <!-- dataservice-runner-core -->
+        <configfile finalname="/etc/org.talend.ipaas.rt.dsrunner.cfg">
+            mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-core/2.13.6/cfg/org.talend.ipaas.rt.dsrunner
+        </configfile>
+        <config name="org.talend.ipaas.rt.dsrunner">
+# Microservice-related settings
+
+# Directory where microservice files are temporary stored.
+# By default, directory inside Talend-RE is used.
+# It possible to specify directory outside of Talend-RE using absoulte path.
+ms.execution.folder=${karaf.data}/dsrunner/exec/microservices
+
+# Limits the number of simultaneously running microservices.
+# The maximum possible value is 50.
+# Set value to 0 to disable microservice execution.
+ms.running.instance.limit=20
+
+# Each microservice binds to a port to handle HTTP connections.
+# Microservices will sequentially occupy ports starting from the given one,
+# e.g. if 10 microservices are allowed by ms.running.instance.limit setting
+# and all 10 microservices are running, they will occupy ports 5070, 5071, 5072, ... , 5089.
+ms.http.port.range.start=5070
+
+# Specifies JRE to run microservices, by default system JRE is used.
+# Path to Java executable directory should be specified.
+# Example (Linux): ms.custom.jre.path=/usr/lib/jvm/java-11-openjdk-amd64/bin
+# Example (Windows): ms.custom.jre.path=C\:/Program Files/Zulu/zulu-11/bin
+ms.custom.jre.path=
+
+# Specifies custom JVM parameters to be used when running microservices.
+ms.custom.jvm.params=
+
+# Specifies the location of custom application.properties file used by microservices.
+# By default, built-in application.properties file is used.
+# Example: ms.custom.application.properties=/tmp/custom-application.properties
+ms.custom.application.properties=
+
+# Specifies log4j2 configuration file.
+# ms.custom.log4j2.conf = /undefined/location
+
+# Enable/disable log collection
+ms.log.collection.enabled=true
+
+# Host of Log Server
+ms.log.collection.host = localhost
+
+# Port of Log Server
+ms.log.collection.port = 7788
+
+# Delay between reconnections to Log Server (milliseconds)
+ms.log.collection.reconnection.delay = 120000
+
+# Allow specified OS users (separated by a comma &#39;,&#39;) to start microservices. Wildcard is allowed.
+# Example: ms.execution.run.as.allow.list=myuser1,this.super-user, sub-user2,userprod*
+# Set ms.execution.run.as.allow.list=anybody to allow microservice execution
+# for impersonation of any user and without impersonation
+ms.execution.run.as.allow.list=
+
+# Ensure that undesired instructions are not inserted in the user name variable.
+ms.execution.run.as.user.validation.regex=^[a-z][-a-z0-9]*\$
+
+# Set to true to use &#39;sudo su -&#39; for impersonation.
+# Executes microservices in a login shell.
+# Requires RE itself executed using sudo
+ms.running.sudo.su.mode=false
+
+# OSGi services-related settings
+
+# Directory where OSGi bundles files are temporary stored.
+# By default, directory inside Talend-RE is used.
+# It possible to specify directory outside of Talend-RE using absolute path.
+osgi.execution.folder=${karaf.data}/dsrunner/exec/osgi
+
+# Enable/disable log collection
+osgi.log.collection.enabled=true
+
+# Host of Log Server
+osgi.log.collection.host = localhost
+
+# Port of Log Server
+osgi.log.collection.port = 7789
+
+# Delay between reconnections to Log Server (milliseconds)
+osgi.log.collection.reconnection.delay = 120000
+</config>
+        <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.14.0</bundle>
+        <bundle dependency="true">mvn:commons-io/commons-io/2.16.1</bundle>
+        <bundle dependency="true">mvn:commons-collections/commons-collections/3.2.2</bundle>
+        <bundle dependency="true">mvn:org.apache.commons/commons-configuration2/2.10.1</bundle>
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-core/2.13.6</bundle>
+
+        <!-- microservice-client -->
+        <configfile finalname="/etc/org.talend.ipaas.rt.dsrunner.microservice.client.cfg">
+            mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-microservice-client/2.13.6/cfg/org.talend.ipaas.rt.dsrunner.microservice.client
+        </configfile>
+        <config name="org.talend.ipaas.rt.dsrunner.microservice.client">${org.talend.ipaas.rt.dsrunner.microservice.client.cfg}</config>
+        <bundle dependency="true">mvn:org.jolokia/jolokia-client-java/1.7.2</bundle>
+        <bundle dependency="true">mvn:com.googlecode.json-simple/json-simple/1.1.1</bundle>
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-microservice-client/2.13.6</bundle>
+
+        <!-- talendruntime-client -->
+        <configfile finalname="/etc/org.talend.ipaas.rt.dsrunner.talendruntime.client.cfg">
+            mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-talendruntime-client/2.13.6/cfg/org.talend.ipaas.rt.dsrunner.talendruntime.client
+        </configfile>
+        <config name="org.talend.ipaas.rt.dsrunner.talendruntime.client"># The JMX url to the Talend Runtime
+talendruntime.jmx.url=service:jmx:rmi://localhost:44444/jndi/rmi://localhost:1099/karaf-trun
+
+# Default &#39;tesb&#39; value can be removed if &#39;RUNTIME_JMX_USERNAME&#39; is set as environment variable or Java system property
+# If the value is encrypted specify &#39;ENC(encrypted_value)&#39;, otherwise provide the plain text value.
+talendruntime.jmx.username=${env:RUNTIME_JMX_USERNAME:-${RUNTIME_JMX_USERNAME:-tesb}}
+
+# Default &#39;tesb&#39; value can be removed if &#39;RUNTIME_JMX_PASSWORD&#39; is set as environment variable or Java system property
+# If the value is encrypted specify &#39;ENC(encrypted_value)&#39;, otherwise provide the plain text value.
+talendruntime.jmx.password=${env:RUNTIME_JMX_PASSWORD:-${RUNTIME_JMX_PASSWORD:-tesb}}
+
+# The encryption algorithm used to encrypt properties in this file
+properties.encryption.algorithm=${env:TESB_ENV_ALGORITHM:-${TESB_ENV_ALGORITHM:-PBEWITHSHA256AND256BITAES-CBC-BC}}
+# The encryption password used to encrypt properties in this file
+properties.encryption.password=${env:TESB_ENV_PASSWORD:-${TESB_ENV_PASSWORD}}
+
+# Prevent bundles from refreshing automatically upon deployment to Talend Runtime
+talendruntime.deployments.suppress.auto.refresh=true
+
+# Timeout duration, in seconds, for the state check of deployment bundles inside Talend Runtime
+talendruntime.deployments.bundles.check.timeout.seconds=120
+
+# How often, in seconds, to check the state of deployment bundles inside Talend Runtime
+talendruntime.deployments.bundles.check.period.seconds=10</config>
+        <bundle dependency="true">mvn:io.dropwizard.metrics/metrics-core/3.2.6</bundle>
+        <bundle start-level="75">mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-talendruntime-client/2.13.6</bundle>
+
+        <!-- log-collector -->
+        <configfile finalname="/etc/org.talend.ipaas.rt.dsrunner.log4jsocket.collector.cfg">
+            mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-log-collector/2.13.6/cfg/org.talend.ipaas.rt.dsrunner.log4jsocket.collector
+        </configfile>
+        <config name="org.talend.ipaas.rt.dsrunner.log4jsocket.collector"># host / port for microservices logs listener
+ms.socket.host=localhost
+ms.socket.port=7788
+
+# host / port for OSGi logs listener
+osgi.socket.host=localhost
+osgi.socket.port=7789
+
+# pool size of microservices logs processors
+ms.worker.thread.number=10
+
+# pool size of microservices logs processors
+osgi.worker.thread.number=10
+
+# create new compact log events for executions in OSGi
+osgi.compact.logging=false
+
+jobLogFatalLevel=true
+</config>
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/pax-logging-enhancer/2.13.6</bundle>
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-log-collector/2.13.6</bundle>
+
+        <!-- metrics-collector -->
+        <configfile finalname="/etc/org.talend.ipaas.rt.dsrunner.metrics.collector.cfg">
+            mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-metrics-collector/2.13.6/cfg/org.talend.ipaas.rt.dsrunner.metrics.collector
+        </configfile>
+        <config name="org.talend.ipaas.rt.dsrunner.metrics.collector"># Polling interval for Metric Events in seconds
+# Max. possible value is 3600
+# 0 means that metric collection is disabled
+metric.collection.interval=60
+
+# Jolokia URL for TLS enabled microservices. Must contain string {ms.port}
+#ms.metric.collection.jolokia.url=https://localhost:{ms.port}/jolokia
+
+# Jolokia configuration for basic authentication
+ms.metric.collection.jolokia.username=${env:SPRING_BOOT_SECURITY_USER_NAME}
+ms.metric.collection.jolokia.password=${env:SPRING_BOOT_SECURITY_USER_PASSWORD}
+</config>
+        <bundle>mvn:org.talend.ipaas.engine.dsrunner/dataservice-runner-metrics-collector/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-ops4j-layout-json">
+        <bundle>mvn:org.talend.ipaas.engine/ops4j-layout-json/2.13.6</bundle>
+    </feature>
+
+    <feature name="tipaas-logs-extras">
+        <bundle>mvn:org.talend.ipaas.engine/logs-extras/2.13.6</bundle>
+    </feature>
+
+</features>

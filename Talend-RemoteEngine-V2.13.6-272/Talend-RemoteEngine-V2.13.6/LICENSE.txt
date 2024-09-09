@@ -1,0 +1,403 @@
+QLIK(r) CUSTOMER AGREEMENT
+IMPORTANT: BY CHECKING THE ACCEPTANCE BOX, DOWNLOADING, INSTALLING, ACCESSING OR USING QLIK PRODUCTS, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU ACCEPT THESE TERMS ON BEHALF OF ANY EMPLOYER OR BUSINESS ENTITY, SUCH ENTITY IS DEEMED THE CUSTOMER HEREUNDER AND YOU REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO LEGALLY BIND SUCH ENTITY TO THIS AGREEMENT.
+
+
+I. 	GENERAL TERMS
+
+Agreement. This Agreement is between Customer and the Qlik entity identified on an Order Form or in Table 1 to this Agreement ("Qlik") and governs the use of all Qlik Products and Services accessed or used by Customer.
+ 
+2. 	Definitions
+
+Unless defined elsewhere in this Agreement, the capitalized terms utilized in this Agreement are defined below.
+
+2.1. "Agreement" means this Qlik Customer Agreement, each addendum attached hereto (which is incorporated by reference), and any Order Form(s) between Qlik and Customer for the provision of Qlik Products or Services.
+
+2.2. "Authorized Third Party" means any third party authorized by Customer to access and use any Qlik Products, designated for external use in the Documentation or Order Form, provided such use is solely in connection with Customer's business relationship with the authorized third party.
+
+2.3. "Authorized Reseller" means a reseller, distributor or other third party authorized by Qlik to sell Qlik Products or Services.
+
+2.4. "Authorized User" means (a) in the case of an individual accepting this Agreement on such individual's own behalf, such individual; or (b) an employee, contractor, consultant or Authorized Third Party of Customer, who has been authorized by Customer to use the Qlik Products in accordance with the terms and conditions of this Agreement and has been allocated a license or user credentials.
+
+2.5. "Confidential Information" means non-public information that is disclosed by or on behalf of a Party under or in relation to this Agreement that is identified as confidential at the time of disclosure or should be reasonably understood to be confidential or proprietary due to the nature of the information and/or the circumstances surrounding its disclosure. Confidential Information does not include information which, and solely to the extent it: (i) is generally available to the public other than as a result of a disclosure by the receiving Party or any of its representatives; (ii) was known or becomes known to the receiving Party from a source other than disclosing Party or its representatives without having violated any confidentiality agreement of the disclosing Party; (iii) is independently developed by the receiving Party without the use or benefit of any of the disclosing Party's Confidential Information; or (iv) was disclosed by the disclosing Party to a third party without an obligation of confidence. In any dispute concerning the applicability of these exclusions, the burden of proof will be on the receiving Party and such proof will be by clear and convincing evidence.
+
+2.6. "Consulting Services" means any consulting services for Qlik Products performed by Qlik under the terms of this Agreement and any applicable Order Form.
+
+2.7. "Content" means information, data, materials, media or
+other content provided by or on behalf of Customer and/or its Authorized Users for use with Qlik Products or Services, including data from third party applications enabled by Customer or an Authorized User. Content may also be referred to as Customer Data.
+
+2.8. "Customer" means an individual or company that has entered into this Agreement by electronically accepting the terms or by accessing or using the Qlik Products; or where an Order Form has been executed, then Customer means the entity identified on the Order Form.
+
+2.9. "Delivery Date" means the date on which access to the Qlik Products is initially made available (via download or otherwise) to Customer or to the Authorized Reseller as applicable, which date may be specified in an Order Form.
+
+2.10. "Documentation" means the then-current technical and user documentation for the Qlik Products, including the applicable product descriptions and/or service description guide available at www.qlik.com/product-terms.
+
+2.11. "Education Services" means any training or education services performed by Qlik, including educational content provided by Qlik online or by an instructor, under the terms of this Agreement and any applicable Order Form.
+
+2.12. "Export Control Laws" means export control laws and regulations of the U.S., E.U., and other governments, as well as regulations and sanctions declared by the U.S. Department of the Treasury Office of Foreign Assets Control, the U.S. Department of Commerce, the Council of the E.U. and their counterparts under applicable law, including all end user, end use and destination restrictions.
+
+2.13. "IP Claim" means a claim brought by a third party alleging that the Qlik Products, as delivered by Qlik and used as authorized under this Agreement, infringes upon any third- party copyright, trademark or a patent.
+
+2.14. "Order Form" means an order form, statement of work or written document pursuant to which Customer orders Qlik Products or Services that is executed by the Parties, or executed by Customer and an Authorized Reseller.
+
+2.15. "Party" or "Parties" means Qlik and Customer, individually and collectively, as the case may be.
+
+2.16. "Qlik Acceptable Use Policy" means Qlik's then current Qlik Cloud Acceptable Use Policy located at www.qlik.com/product-terms. 
+ 
+2.17. "Qlik Cloud" means any subscription-based, SaaS solution provided and managed by Qlik or its affiliate.
+
+2.18. "Qlik Cloud Client" means a software client that must be downloaded and installed to use Qlik Cloud.
+
+2.19. "Qlik Marks" means Qlik's trademarks, service marks, trade names, logos, and designs, relating to Qlik Products,
+ whether or not specifically recognized, registered or perfected, including without limitation, those listed on Qlik's website.
+
+2.20. "Qlik Products" means Software and Qlik Cloud products provided by Qlik and its affiliates. Qlik Products do not include Services or early release, beta versions or technical previews of product offerings.
+
+2.21. "Services" means Support, Consulting Services or Education Services performed by Qlik under the terms of this Agreement and any applicable Order Form. Services does not include Qlik Cloud.
+
+2.22. "Software" means the generally available release of the Qlik software made available under this Agreement, in object code form, initially provided or made available to Customer as well as updates thereto that Qlik elects to make available at no additional charge to all of its customers that subscribe to Support for the Software.
+
+2.23. "Support" means end user support and access to updates for the Qlik Products, which are provided by Qlik as part of a paid subscription or support contract.
+
+3. 	Customer Rights and Responsibilities
+
+3.1. Provision of Qlik Products. Subject to the terms of this Agreement, Qlik grants to Customer a world-wide, nonexclusive, non-transferable and non-sublicensable right for its Authorized Users to access or use Qlik Products for Customer's internal business operations, provided any use of Qlik Products shall be: (i) in accordance with the Documentation and this Agreement; and (ii) for the scope, term and quantities which may be specified in an Order Form.
+
+3.2. Services. Support for Software will be provided in accordance with Qlik's Support Policy, and for Qlik Cloud, in accordance with Qlik's Service Level Agreement.  Notwithstanding the above, support for any Talend-branded products will be provided in accordance with the Talend Service Description Guide.  The applicable Support terms are available at www.qlik.com/product-terms. Qlik may provide Consulting or Education Services to Customer pursuant to this Agreement, any applicable product descriptions (available at www.qlik.com/product-terms) and any applicable Order Form.
+
+3.3. Consulting and Education Warranty. Qlik warrants that Consulting Services and Education Services will be performed using reasonable care and skill consistent with generally accepted industry standards. For any claimed breach of this warranty, Customer must notify Qlik of the warranty claim within thirty (30) days of Customer's receipt of the applicable Consulting Services or Education Services. Customer's exclusive remedy and Qlik's sole liability with regard to any breach of this warranty will be, at Qlik's option and expense, to either: (i) re-perform the non-conforming Consulting Services or Education Services; or (ii) refund to Customer the fees paid for the non-conforming Consulting Services or Education Services. Customer shall provide reasonable assistance to Qlik in support of its efforts to furnish a remedy for any breach of this warranty.
+
+3.4. Use Restrictions. Except as expressly permitted by this Agreement, Customer will not, nor permit or authorize anyone to:
+
+3.4.1. distribute, convey, lend, lease, share, sell, transfer, sublicense, rent, or time share any of the Qlik Products, or any of its components or product keys, or permit third parties to download or install any Software;
+
+3.4.2. copy, decompile, disassemble or reverse engineer or otherwise attempt to extract or derive the source code or any methods, algorithms or procedures from the Qlik Products, except as otherwise expressly permitted by applicable law, or modify, adapt, translate or create derivative works based upon the Qlik Products;
+3.4.3. alter or circumvent any product, key or license restrictions, or transfer or reassign a named user license or entitlement, in such a manner that enables Customer to exceed purchased quantities, defeat any use restrictions, or allows multiple users to share such entitlement to exceed purchased 
+quantities;
+
+3.4.4. use, offer, embed, or otherwise exploit the Qlik Products, whether or not for a fee, in any managed service provider (MSP) offering; platform as a service or integration platform as a service (PaaS or iPaaS) offering; service bureau; or other similar product or offering, including offering standalone Qlik 
+Products as a hosted service;
+
+3.4.5. use the Qlik Products if Customer is a competitor, or use the Qlik Products in any manner that competes with Qlik, including but not limited to, benchmarking, collecting and publishing data or analysis relating to the performance of the Qlik Products, or developing or marketing a product that is competitive with any Qlik Product or service;
+
+3.4.6. use the Qlik Products in any manner or for any purpose that infringes, misappropriates or otherwise violates any intellectual property right or other right of any third party or that violates any applicable law; or
+
+3.4.7. interfere with or disrupt the integrity, operation, or performance of the Qlik Products or interfere with the use or enjoyment of it by others.
+
+3.4.8. use a Qlik Cloud Client for any purpose other than to access or use Qlik Cloud in accordance with this Agreement. 
+
+3.5. Qlik Marks. For so long as Customer has the right to access and use Qlik Products, Qlik grants to Customer a nonexclusive, non-transferable and limited right to use Qlik Marks for the sole purpose of promoting any permitted use of Qlik Products. Any use of Qlik Marks must be in compliance with the Qlik Logo and Trademark Policy available at www.qlik.com. Customer may not remove or obscure any copyright, trademark or other proprietary notice displayed or included in the Qlik Products. 
+
+3.6. Use. Customer shall ensure that use of Qlik Products and Services is at all times compliant with this Agreement and all applicable laws, including any Export Control Laws. Customer is solely responsible for compliance relating to the manner and purpose in which it chooses to use Qlik Products, including but not limited to, the transfer and processing of Content, the provision of Content to end users, and any industry specific requirements to which Customer may be subject.
+
+3.7. Access. Customer is solely and directly responsible (a) for maintaining the security of all keys, user IDs, passwords and other credentials, (b) for all acts and omissions taken by its Authorized Users or under any of its keys or credentials; and (c) to promptly notify Qlik of any unauthorized use or access and take all steps necessary to terminate such unauthorized use or access. Customer will provide Qlik with such cooperation and assistance related to any unauthorized use or access as Qlik may reasonably request. 
+
+3.8. Payment. Customer shall pay any fees due in accordance with the payment terms set forth in the Order Form. Payments are non-cancelable, non-refundable and noncreditable with no right of offset or suspension, except as otherwise expressly provided in this Agreement. Notwithstanding anything to the contrary in the Order Form, all subscription fees are due and owing for the full subscription period when purchased, and any arrangement permitting installment payments is provided to Customer solely as a courtesy that shall be deemed revoked by Qlik upon a material breach of this Agreement by Customer at
+ Qlik's discretion. Unpaid fees may be subject to a monthly late fee as set forth in an Order Form on any outstanding balance, or the maximum rate permitted by law, whichever is lower. Fees for Consulting Services or Education Services are exclusive of travel costs and expenses. If Customer fails to make any payment when due, Qlik may, without limiting its other rights and remedies, temporarily suspend Customer's account or access to Qlik Products. Customer will remain responsible for all fees incurred before and during any suspension. Use of Qlik Products is subject to usage or quantity limits ("Quantities"). If Customer's use exceeds purchased Quantities, Customer will be invoiced and shall pay for such additional Quantities monthly in arrears at the fees which may be set forth in the Order Form.
+
+3.9. Taxes. Fees do not include sales, use, withholding, value-added or other taxes or duties. Customer agrees to pay all applicable taxes, public fees, duties, deductions or withholdings for which Qlik is required to pay or account, exclusive of any tax on Qlik's income. Customer shall directly pay any such taxes or duties assessed against it, unless Customer provides Qlik in a timely manner with a valid certificate of exemption or other evidence that items are not taxable.
+
+3.10. Billing Information. Customer agrees to provide Qlik with accurate, timely and complete payment and invoicing information, including current contact information and tax identification numbers.
+
+4. 	Intellectual Property Rights and Indemnification
+
+4.1. Ownership. Customer retains all right, title and interest in and to all Content. Qlik retains all right, title and interest in and to the Qlik Products, Documentation and if applicable, all Education Services materials and Consulting Services deliverables, including all know-how, methodologies, designs and improvements to the Qlik Products, but excluding any Content incorporated into any such Services. Qlik hereby grants Customer a non-exclusive license to use any Education Services materials and Consulting Services deliverables or work product in connection with Customer's authorized use of the Qlik Products.
+
+4.2. Retention of Rights. No title or ownership of any proprietary or other rights related to Qlik Products is transferred or sold to Customer or any Authorized User pursuant to this Agreement. All intellectual property rights not explicitly granted to Customer are reserved and Qlik, its affiliates, and their respective suppliers or licensors, where applicable, retain all right, title and interest in and to the Qlik Products, including all intellectual property rights embodied therein, as well as to all Qlik Marks. Customer is not obligated to provide Qlik with any suggestions or feedback about the Qlik Products, but if Customer elects to do so, Qlik may use and modify this feedback for any purpose, including developing and improving the Qlik Products, without any liability, time limitation, restriction, or payment to Customer
+
+4.3. Indemnification. Qlik shall defend, indemnify and hold Customer and its directors, officers, employees, agents, and permitted successors and assigns harmless from any damages and costs awarded against Customer and its directors, officers, employees, agents, successors and assigns as a result of an IP Claim. Customer shall defend, indemnify and hold Qlik and its directors, managers, officers, employees, agents, resellers, licensors, affiliates, successors and assigns harmless from any damages and costs awarded against Qlik as a result of a third party claim alleging: (i) use of the Qlik Products by an Authorized Third Party or use of Content with Qlik Products infringes upon any third party rights, including any copyright, trademark or patent, or (ii) Customer's failure to comply with any Export Control Laws.
+
+4.4. Procedures. Each party's indemnification obligation is subject to: (i) prompt notification of a claim in writing to the indemnifying
+party; (ii) consent to allow the indemnifying party to have sole control of the defense and any related settlement negotiations; and (iii) provision of information, authority and assistance as necessary for the defense and settlement of an indemnified claim. The indemnifying Party shall not consent to entry into judgment or enter into any settlement that admits liability of the indemnified Party or provides for injunctive or other non-monetary relief affecting the indemnified Party, without the prior consent of the indemnified Party, which consent shall not be unreasonably withheld.
+
+4.5. Exceptions. Qlik will not be liable for any IP Claim arising from or based upon: (i) any unauthorized use, reproduction or distribution of the Qlik Products; (ii) any modification or alteration of the Qlik Products without the prior written approval of Qlik; (iii) use of the Qlik Products in combination with any other software, hardware, third-party data or other materials not provided by Qlik or expressly authorized in the applicable Documentation; (iv) use of a prior version of the Qlik Product, if use of a newer version of the Qlik Product would have avoided such claim; or (v) any Third- Party Materials not used in accordance with the Documentation.
+
+4.6. Remedies. If the Qlik Product becomes, or, in Qlik's opinion, is likely to become, the subject of an IP Claim, Qlik may, at its option and expense, either: (i) obtain the right for Customer to continue using the Qlik Product in accordance with this Agreement; (ii) replace or modify the Qlik Product so that it becomes non-infringing while retaining substantially similar functionality; or (iii) if neither of the foregoing remedies can be reasonably provided by Qlik, terminate all rights to use the Qlik Products (without need for a ruling by a court or arbitrator) and refund as applicable a pro rata portion of unused, prepaid fees.
+
+4.7. SOLE AND EXCLUSIVE REMEDY. THIS SECTION 4 STATES QLIK'S SOLE AND ENTIRE OBLIGATION AND LIABILITY, AND CUSTOMER'S AND ITS AFFILIATES' SOLE AND EXCLUSIVE RIGHT AND REMEDY, FOR ANY CLAIM OF INFRINGEMENT OR ALLEGED VIOLATION OF INTELLECTUAL PROPERTY RIGHTS.
+
+5. 	Limitation of Liability
+
+5.1. Limitation of Liability. Except for: (i) each Party's indemnification obligations under this Agreement, (ii) death or bodily injury caused by a Party's negligence; (iii) Customer's payment obligations; and (iv) Customer's violation of Qlik's intellectual property rights, each Party's maximum, cumulative liability for any claims, losses, costs (including attorney's fees) and other damages arising under or related to this Agreement, regardless of the form of action, whether in contract, tort (including negligence or strict liability) or otherwise, will be limited to actual damages incurred, and will in no event exceed the greater of the amount of fees paid or payable by Customer for the twelve (12) month period preceding the loss or damages giving rise to the claim and attributable to the specific products or services giving rise to such damages, or one thousand U.S. dollars (USD $1,000).
+
+5.2. Exclusion of Damages. IN NO EVENT WILL QLIK, ITS AFFILIATES, OR THEIR RESPECTIVE DIRECTORS, EMPLOYEES, AGENTS, SUCCESSORS, ASSIGNS SUPPLIERS OR LICENSORS, BE LIABLE FOR ANY LOSS OF SAVINGS, PROFITS OR REVENUES, LOSS OR CORRUPTION OF DATA, GOODWILL, OR REPUTATION, INACCURACY OF ANY DATA, THE COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR SOFTWARE, OR FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL DAMAGES, HOWSOEVER ARISING AND REGARDLESS OF THE THEORY OF LIABILITY (INCLUDING NEGLIGENCE OR
+STRICT LIABILITY), EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE OR LOSS.  QLIK PRODUCTS ARE NOT INTENDED FOR USE WITH OR FOR HIGH-RISK ACTIVITIES AND QLIK WILL NOT BE LIABLE FOR ANY CLAIMS OR DAMAGES ARISING FROM INHERENTLY DANGEROUS USE OF THE QLIK PRODUCTS. 
+
+5.3. THE LIMITATIONS, EXCLUSIONS AND DISCLAIMERS CONTAINED IN THIS AGREEMENT ARE INDEPENDENT OF ANY AGREED REMEDY SPECIFIED IN THIS AGREEMENT AND WILL APPLY TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY AGREED REMEDY IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. TO THE EXTENT THAT QLIK MAY NOT, AS A MATTER OF LAW, DISCLAIM ANY WARRANTY OR LIMIT ITS LIABILITIES, THE SCOPE OR DURATION OF SUCH WARRANTY AND THE EXTENT OF QLIK'S LIABILITY WILL BE THE MINIMUM PERMITTED UNDER SUCH LAW. IF A WAIVER, RIGHT, OR REMEDY IS EXERCISED PURSUANT TO MANDATORY LAW, IT SHALL BE EXERCISED SOLELY FOR THE PURPOSE PROVIDED AND IN CONFORMANCE WITH THE PROCEDURES AND LIMITATIONS EXPRESSLY PROVIDED FOR BY SUCH LAW.
+
+5.4. No Third-Party Beneficiaries. The warranties and other obligations of Qlik under this Agreement run only to, and for the sole benefit of Customer, notwithstanding any rights of Authorized Third Parties to access or use the Qlik Products. Except as otherwise mandated by applicable law, no person or entity will be considered a third-party beneficiary of this Agreement or otherwise entitled to receive or enforce any rights or remedies in relation to this Agreement.
+
+5.5. Warranty Disclaimer. EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, QLIK MAKES NO OTHER WARRANTIES AND HEREBY DISCLAIMS ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, NON-INFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE (EVEN IF QLIK HAS BEEN INFORMED OF SUCH PURPOSE). QLIK DOES NOT WARRANT THAT THE QLIK PRODUCTS AND SERVICES WILL BE ERROR-FREE, COMPLETELY SECURE OR MEET CUSTOMER'S REQUIREMENTS.
+
+6. 	Confidentiality
+
+Each Party shall protect the other Party's Confidential Information using the same degree of care used to protect its own confidential information, but in no event less than a reasonable degree of care. The receiving Party shall not: (i) use Confidential Information for any purpose outside the scope of this Agreement, or (ii) voluntarily disclose Confidential Information except to employees, contractors and agents as required to perform its obligations under the Agreement. Notwithstanding the foregoing, a Party may disclose the other Party's Confidential Information to the extent that it is required to be disclosed in accordance with an order or requirement of a court, administrative agency or other governmental body, provided that such Party, to the extent permitted by law, provides the other Party with prompt notice of such order or requirement in order that it may seek a protective order. Each Party's confidentiality obligations hereunder will continue for a period of three (3) years following any termination of this Agreement, provided, however, that each Party's obligations will survive and continue in effect thereafter with respect to, and for so long as, any Confidential Information continues to be a trade secret under applicable law. The Parties acknowledge and agree that the Qlik Products and all pricing information shall be the Confidential Information of Qlik.
+
+7. 	Term and Termination 
+ 
+7.1. Term. This Agreement is effective upon the earlier of the effective date of the first Order Form referencing this Agreement or the date Customer is first provided with access to or use of the Qlik Products and shall remain in effect until expiration or termination of all rights to use any Qlik Products, which may be specified in any applicable Order Form. Unless otherwise indicated on an Order Form, Qlik Product subscriptions shall begin upon the Delivery Date and automatically renew for successive terms equal to the initial subscription period, unless either Party provides prior written notice of non-renewal to the other Party at least forty-five (45) days prior to the end of the then-current subscription period. Subscriptions may not be cancelled in whole or in part during any subscription period. Subscription fees are subject to increase based upon prevailing rates at the time of renewal.
+
+7.2. Termination for Breach or Insolvency. Either Party may terminate this Agreement or any applicable Order Form, license or, subscription (without resort to court or other legal action) if the other Party fails to cure a material breach within thirty (30) days after written notice of such breach, provided that Qlik may terminate this Agreement immediately upon any breach of Section 3.4. Either Party may terminate this Agreement if the other Party terminates or suspends its business without a successor or becomes the subject of a petition in bankruptcy or any other proceeding relating to insolvency, receivership, liquidation or assignment for the benefit of creditors. If Qlik Products or Services are purchased through an Authorized Reseller, Qlik may terminate any right to use the Qlik Products or Services pursuant to this Section in the event Qlik fails to receive payment for such Qlik Products or Services.
+
+7.3. Effect of Termination. Customer's rights with respect to Qlik Products and Services, will end upon termination of this Agreement or expiration of any applicable subscription or term. If required by Export Control Laws, Qlik may suspend or terminate Customer's access to Qlik Products and/or Services. Upon termination of this Agreement or the right to use any Qlik Products or Services, Customer shall immediately cease using the applicable Qlik Products and Services and if applicable, uninstall, delete and destroy all copies of the applicable Software. Termination of this Agreement or any licenses or subscriptions shall not prevent either Party from pursuing all available legal remedies, nor shall such termination relieve Customer's obligation to pay all fees that are owed. All provisions of this Agreement relating to Qlik's ownership of the Qlik Products, limitations of liability, disclaimers of warranties, confidentiality, waiver, audit and governing law and jurisdiction, will survive the termination of this Agreement.
+
+8. 	General Provisions
+ 
+8.1. Recordkeeping, Verification and Audit. While this Agreement is in effect and for one (1) year after the effective date of its termination, upon request by Qlik but not more than once per calendar year, Customer shall conduct a self-audit of its use of the Qlik Products and, within ten (10) business days after receipt of such request, submit a written statement to Qlik verifying that it is in compliance with the terms and conditions of this Agreement. Qlik shall have the right, on its own or through its designated agent or third-party accounting firm, to conduct an audit of Customer's use and deployment of the Qlik Products and monitor use of Qlik Cloud, in order to verify compliance with this Agreement. Qlik's written request for audit will be submitted to Customer at least fifteen (15) days prior to the specified audit date, and such audit shall be conducted during regular business hours and with the goal of minimizing the disruption to Customer's business. If such audit discloses that Customer is not in material compliance with the terms of this Agreement, then Customer shall be responsible for the reasonable costs of
+the audit, in addition to any other fees or damages to which Qlik may be entitled under this Agreement and applicable law.
+
+8.2. Third-Party Materials. Qlik Products may incorporate or otherwise access certain open source or other third-party software, data, services, or other materials for the hosting and delivery of the Qlik Products, which are identified in the Documentation (the "Third-Party Materials"). Qlik represents that if the Qlik Products are used in accordance with this Agreement, such use shall not violate any license terms for the Third-Party Materials. Qlik makes no other representation, warranty, or other commitment regarding the Third-Party Materials, and hereby disclaims any and all liability relating to Customer's use thereof.
+
+8.3. Connectivity to Third-Party Applications. Use of Qlik Products to connect or interoperate with or access third-party applications or services may be governed by terms and conditions established by such third party. Third-party application programming interfaces and other third-party applications or services ("Third-Party Applications") are not managed by Qlik, and Qlik shall have no liability for connectivity if any Third-Party Applications are changed or discontinued by the respective third parties. Qlik does not support, license, control, endorse or otherwise make any representations or warranties regarding any Third-Party Applications. Use of Qlik published APIs are subject to the Qlik API Policy located at www.qlik.dev.
+
+8.4. Evaluation. If Customer is provided Qlik Products for evaluation purposes ("Evaluation Products"), use of the Evaluation Products is only authorized in a non-production environment and for the period limited by the corresponding license key or credentials. If Customer is provided access to an evaluation of Qlik Cloud, Qlik will make the applicable Qlik Cloud offering  available to Customer for its internal business operations on an evaluation basis free of charge until the earlier of: (a) the end of the evaluation period; (b) the start date of any purchased Qlik Cloud subscription ordered by Customer; or (c) termination by Qlik in its sole discretion. ANY CONTENT IN QLIK CLOUD, AND ANY CONFIGURATION CHANGES MADE TO THE QLIK CLOUD BY OR FOR CUSTOMER, DURING AN EVALUATION MAY BE PERMANENTLY LOST UNLESS: (A) CUSTOMER PURCHASES A SUBSCRIPTION FOR QLIK CLOUD OR (B) CUSTOMER EXPORTS SUCH CONTENT BEFORE THE END OF THE EVALUATION PERIOD. Notwithstanding any other provision in this Agreement, the right to use the Evaluation Products is provided "AS IS" without indemnification, Support, service level credits, or warranty of any kind, expressed or implied. In no event will Qlik's maximum cumulative liability for Evaluation Products exceed one thousand U.S. dollars ($1,000).
+
+8.5. Early Release Products. Qlik may, in its discretion, periodically provide certain Customers with an opportunity to test early release features or functionality in connection with Qlik Products. Customer may decline to participate in the testing of such additional features or functionality at any time. Customer acknowledges that such features or functionality are not considered part of the Qlik Products under this Agreement, are not supported, are provided "as is" with no warranties of any kind and may be subject to additional terms. Qlik reserves the right at any time, in its sole discretion, to discontinue provision of, or to modify, any such features or functionality provided for testing purposes. 
+
+8.6. Assignment. Customer will not assign or transfer this Agreement or its rights and obligations hereunder to any third party without the prior written consent of Qlik. For purposes of this Section, any change of control of Customer, whether by merger, sale of equity interests or otherwise, will constitute an assignment requiring the prior written consent of Qlik. Any attempt by Customer to assign this Agreement or its rights and obligations hereunder in violation of this Section will be null and void. Qlik is free to assign or transfer any or all of its rights or obligations under this Agreement at its discretion. All terms of this Agreement will be binding upon, inure to the benefit
+of, and be enforceable by and against the respective successors and permitted assigns of Qlik and Customer.
+
+8.7. Privacy. Qlik's privacy notices and further information regarding Qlik's privacy measures, including Qlik's Product Privacy Notice, may be found at www.qlik.com. 
+
+8.8. Governing Law and Jurisdiction. This Agreement was made in, and this Agreement is governed by the law of, the jurisdiction set out in Table 1 corresponding to the Qlik entity identified as the contracting party, but excluding any conflict of law rules or the United Nations Convention on Contracts for the International Sale of Goods, the application of which is hereby expressly excluded. Any suit, action or proceeding arising out of or relating to this Agreement or the business relationship between the parties, whether based in tort, contract or statutory violation, shall be brought before, and only before, the courts or arbitration boards set out in Table 1 corresponding to the contracting Qlik entity, and shall be conducted in the English language. The Parties hereby expressly and irrevocably submit to the exclusive jurisdiction of such courts or arbitral bodies for the purpose of any such suit, action or proceeding. Qlik may be irreparably harmed by a breach of the terms of this Agreement and damages, alone, may not be an adequate remedy. Customer agrees, in addition to any other rights or remedies permitted under applicable law, Qlik will have the right to enforce this Agreement by injunctive or other equitable relief without the need to post a bond or to prove damages or irreparable harm. 
+
+TO THE EXTENT PERMITTED UNDER APPLICABLE LAW, CUSTOMER EXPRESSLY WAIVES ANY RIGHT TO A JURY TRIAL REGARDING DISPUTES RELATED TO THIS AGREEMENT.
+
+8.9. Force Majeure. Neither Party shall be liable to the other for any delay or failure to perform any  obligation under this Agreement (except for a failure to pay fees) if the delay or failure is due to unforeseen events, which occur after the effective date of this Agreement and which are beyond the reasonable control of the Parties, such as strikes, blockade, war, acts of civil or military authority, terrorism, riots, natural disasters, refusal of license or other acts by any government or other governmental agencies (including the passage of laws, regulations or sanctions which impact the delivery of Qlik Products or Services), pandemics, failure or diminishment of power, telecommunications or data networks or services, denial-of service attacks or materials shortage in so far as such an event prevents or delays the affected Party from fulfilling its obligations and such Party is not able to prevent or remove the force majeure at reasonable cost.
+ 
+8.10. Trade Restrictions. Qlik Products and Services are provided subject to the laws and regulations of the United States and other countries on trade restrictions that may prohibit or restrict access by certain persons or from certain countries or territories, including but not limited to sanctions, embargoes and export restraints. 
+
+8.11. U.S. Government End Users. The Software and Documentation provided in Qlik Products are deemed to be "commercial computer software" and "commercial computer software documentation," respectively, pursuant to DFAR Section 227.7202 and FAR Section 12.212(b), as applicable. Any use, modification, reproduction, release, performing, displaying or disclosing of the Qlik Products and Documentation by the U.S. Government shall be governed solely by the terms and conditions of this Agreement. 
+
+8.12. Notices. All notices by Customer to Qlik must be in writing and delivered to Qlik: (a) by certified or registered mail or by an internationally recognized express courier addressed to Qlik at 211 S. Gulph Rd., Suite 500, King of Prussia, PA 19406 USA,
+Attention: Legal Department, or (b) by email to CustomerNotices@qlik.com. Unless otherwise specified in writing by Customer, all notices to Customer shall be sent to the address or email provided to Qlik.
+
+8.13. Relationship between the Parties. The Parties are independent contractors. Nothing in this Agreement will be construed to create an agency, joint venture, partnership, fiduciary relationship, joint venture or similar relationship between the Parties.
+
+8.14. No Waiver. No term of this Agreement will be deemed waived and no breach excused unless such waiver or excuse shall be in writing and signed by the Party issuing the same. Neither this Agreement nor any Order Form shall be dependent on Customer issuing a purchase order. Customer acknowledges that any purchase order is for its administrative convenience only and that Qlik has the right to issue an invoice and collect payment without a corresponding purchase order. Any additional or conflicting terms or conditions in any purchase order shall have no legal force or effect.
+
+8.15. Limitation. Subject to applicable law, no action, regardless of form, arising out of this Agreement may be brought by Customer more than two (2) years after the cause of action arose.
+
+8.16. Entire Agreement; Severability; Language. This Agreement, any attachments hereto or documents referenced in the Agreement are the complete statement of the mutual understanding of the Parties and supersedes and cancels all previous written and oral agreements and communications pertaining to the subject matter of this Agreement. This Agreement may not be modified except in writing and signed by both Parties. If any provision of this Agreement is found by a court of competent jurisdiction to be invalid or unenforceable, that provision will be limited to the minimum extent necessary so that this Agreement will otherwise remain in force and effect. In the event of any conflicts or inconsistencies, the Agreement shall take precedence over the Order Form, but only with respect to the specific subject matter of each. For the avoidance of doubt, where an Order Form includes additional and more specific terms and conditions with respect to a concept addressed generally in this Agreement or does not address a concept addressed herein, no conflict shall be deemed to exist. The English language version of this Agreement shall be the governing version used when interpreting or construing this Agreement. 
+ 
+8.17. Construction. For purposes of this Agreement: (i) the words "include," "includes" and "including" are deemed to be followed by the words "without limitation"; (ii) the word "or" is not exclusive; and (iii) words denoting the singular have a comparable meaning when used in the plural, and vice-versa. A Party's role in drafting this Agreement shall not be a basis for construing this Agreement in any manner against such Party. Any Qlik Order Form and the schedules and exhibits attached thereto are an integral part of this Agreement to the same extent as if they were set forth verbatim herein. 
+ 
+8.18. Publicity. Customer hereby grants Qlik the right to list Customer as a customer of Qlik along with other customers in marketing materials such as the Qlik website, customer-facing presentations and press releases. 
+ 
+8.19. Local Law Requirements. If Customer obtains Qlik Products from: (i) QlikTech GmbH and designates an address in Austria or Germany in an Order Form, or (ii) QlikTech Australia Pty Ltd and designates an address in Australia in an Order Form, then the terms of Addendum 1 shall be applicable and shall supersede any conflicting terms in the Agreement. 
+
+II.	QLIK SOFTWARE TERMS 
+
+The terms in this Section II apply exclusively to Software licensed by Customer under this Agreement. 
+
+9.	Warranties
+
+9.1. Software Warranty. Qlik warrants that the Software will, for a period of ninety (90) days from its Delivery Date ("Warranty Period"), operate substantially in conformity with the applicable Documentation. Customer must assert any claim for breach of this warranty within the Warranty Period. Customer's exclusive remedy and Qlik's sole liability with regard to any breach of this warranty will be, at Qlik's option and expense, to either: (i) repair or replace the non-conforming Software; or (ii) if the Software was obtained by purchase, refund to Customer the fees paid by Customer for the non-conforming Software. If Qlik elects to refund the applicable fee paid for the non-conforming Software, then: (i) Customer shall promptly return or demonstrate to Qlik's reasonable satisfaction that it has destroyed the nonconforming Software and any other related materials provided by Qlik; and (ii) the right to access or use such non-conforming Software will automatically terminate.
+
+9.2. Exclusions. Qlik will have no liability for any warranty claim, or any obligation to correct any defect or problem with the Software, to the extent that it arises out of: (i) any use of the Software not in accordance with the Documentation; (ii) any unauthorized modification or alteration of the Software; or (iii) any use of the Software in combination with any third-party software or hardware not specified in the Documentation.
+
+III. 	QLIK CLOUD TERMS
+
+The terms in this Section III apply exclusively to the access and use of Qlik Cloud by Customer.
+
+10. 	Customer Responsibilities
+
+10.1. Content. Customer acknowledges and agrees that it has sole responsibility: (i) to administer user access to Qlik Cloud and the Content, (ii) for the input and administration of Content in Qlik Cloud, including deletion of Content prior to expiration or termination, (iii) to ensure Qlik has all rights necessary to host, store, adapt or integrate such Content as required to provide Qlik Cloud, and (iv) for maintaining Content on the systems from which they are sourced and making backup copies of Content. Customer hereby represents and warrants on behalf of itself and its Authorized Users that it has all of the rights in the Content necessary for the use, display, publishing, sharing and distribution of the Content and that such use of the Content under this Agreement does not violate any third-party rights, legal obligations, laws, or this Agreement.
+
+10.2. Authorized Access. If Customer chooses to have an Authorized User access Qlik Cloud on its behalf, Customer acknowledges that Customer, and not Qlik, is solely responsible and liable for (i) the acts and omissions of such Authorized User in connection with Qlik Cloud; (ii) any Content that Customer requests or instructs the Authorized User to include in Qlik Cloud; and (iii) the issuance, removal and/or deactivation of the credentials issued for such Authorized User.
+
+11. 	Data Security and Privacy 
+
+11.1 Data Security. Qlik will use commercially reasonable, industry standard security measures in providing Qlik Cloud and will comply with such data security regulations applicable to Qlik Cloud. Qlik has implemented appropriate technical and procedural safeguards to protect and secure Content in accordance with the Information Security Addendum available at www.qlik.com/product-terms. Qlik Cloud offerings are hosted and delivered from a data center operated by a third party provider, which is solely responsible for the underlying infrastructure and hosting of Qlik Cloud. Customer is solely responsible for any breach or loss resulting from: (i) Customer's failure to control user access; (ii) failure to secure Content which Customer transmits to and from Qlik Cloud; and (iii) failure to implement appropriate and timely backups, reasonable and appropriate security standards and measures, including encryption technology, to protect against unauthorized access.
+
+11.2. Data Privacy. The terms of the Data Processing Addendum at  www.qlik.com/license-terms ("DPA") re incorporated by reference when executed by Customer as set forth in the DPA and received by Qlik, and shall apply to the extent Content includes "Customer Personal Data" as defined in the DPA. All Content used by or within Qlik Cloud may be stored on servers located in various regions, including the EU, and Customer may select (where available) the region in which its Content resides. Customer and Authorized Users are not permitted to upload or store within Qlik Cloud: (i) payment card information subject to Payment Card Industry Data Security Standards (PCI DSS), or (ii) U.S. Protected Health Information ("PHI") as defined under the U.S. Health Insurance Portability and Accountability Act of 1996 (HIPAA) unless Customer: (a) has executed a Business Associate Agreement for Qlik Cloud ("BAA") with Qlik; and (b) utilizes customer managed key functionality within Qlik Cloud for so long as Customer stores PHI within Qlik Cloud. 
+
+12. 	Qlik Cloud Warranty 
+
+12.1. Warranty. Qlik warrants that Qlik Cloud will perform substantially in accordance with the applicable Documentation when used as authorized under this Agreement. This warranty will not apply: (i) unless Customer notifies Qlik of a claim under this warranty within 30 days of the date on which the condition giving rise to the claim first appears, or (ii) the event giving rise to the warranty claim was caused by misuse, unauthorized modifications, or third-party hardware, software or services. Customer's exclusive remedy and Qlik's sole liability with regard to any breach of this warranty will be, at Qlik's option and expense, to either: (i) repair or replace the non-conforming Qlik Cloud or (ii) terminate the affected Qlik Cloud and refund Customer, on a pro rata basis, any unused, prepaid fees as of the termination effective date, but in no event less than one thousand U.S. dollars (USD $1,000). 
+
+12.2. Warranty Disclaimer. EXCEPT AS EXPRESSLY SET FORTH IN THIS SECTION, QLIK CLOUD IS PROVIDED WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE, AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED. QLIK AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, PARTNERS, SERVICE PROVIDERS AND LICENSORS DO NOT WARRANT THAT: (I) QLIK CLOUD WILL BE UNINTERRUPTED OR ERROR FREE, (II) QLIK CLOUD IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (III) THE RESULTS OF USING QLIK CLOUD WILL MEET CUSTOMER'S OR AUTHORIZED USERS' REQUIREMENTS. FURTHER, ANY PREDICTIVE SERVICES INCLUDED IN QLIK CLOUD ARE BASED ON CUSTOMER'S CONTENT AND INPUT INTO QLIK CLOUD AND SUCH SERVICES ARE NOT A GUARANTEE OF RESULTS OR FUTURE PERFORMANCE.
+
+13. 	Suspension of Service 
+
+Qlik may, without limiting its other rights and remedies, suspend Customer's access to Qlik Cloud at any time if: (i) required by applicable law, including Export Control Laws, (ii) Customer or any Authorized User is in violation of the terms of this Agreement or the Qlik Acceptable Use Policy, or (iii) Customer's use disrupts the integrity or operation of Qlik Cloud or interferes with the use by others. Qlik will use reasonable efforts to notify Customer prior to any suspension, unless prohibited by applicable law or court order. 
+
+
+
+
+QLIK CUSTOMER AGREEMENT - Table 1 
+Governing Law and Venue
+
+Contracting Entity. The Qlik contracting entity, including any Talend affiliate, is the entity identified on the order form executed by Qlik or its affiliate. Where there is no Qlik order form, the contracting entity will be the Qlik contracting entity corresponding to the Customer's billing country location set forth in the table below.
+
+Governing Law.  Governing law corresponds to the Customer's billing country location as set forth in the table below.
+ 
+Customer Location 
+Qlik Contracting Entity 
+Governing Law 
+Any countries not specifically identified in this Table 1 
+QlikTech International Markets AB 
+the Governing Law shall be the laws of Sweden; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+Australia, American Samoa, Cook Islands, Fiji, Guam, Kiribati, Marshall Islands, Federal State of Micronesia, Nauru, Niue, Norfolk Island, Palau, Papua New Guinea, Saint Helena, Samoa, Solomon Islands, 
+Tonga, Tuvalu or Vanuatu  
+QlikTech Australia Pty Ltd. 
+the Governing Law shall be the laws of New South Wales Australia; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be brought before the Courts of New South Wales, Australia and any courts competent to hear appeals therefrom. 
+Brazil 
+QlikTech Brasil Comercializacao de Software Ltda. 
+the Governing Law shall be the laws of Brazil; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+Canada 
+QlikTech Corporation 
+the Governing Law shall be the laws of the Province of Ontario, Canada; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be brought before the Courts of Ontario. 
+Denmark or Iceland 
+QlikTech Denmark A/S 
+the Governing Law shall be the laws of Sweden; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+Finland, Estonia, Latvia or Lithuania 
+QlikTech Finland Oy 
+the Governing Law shall be the laws of Sweden; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+France, Guadalupe, Monaco, or Reunion Island 
+QlikTech France SARL 
+the Governing Law shall be the laws of France; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by the Courts of Paris, France. 
+Germany, Austria, Switzerland, or Liechtenstein 
+QlikTech GmbH 
+the Governing Law shall be the laws of Germany; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by the Courts of Dusseldorf, Germany. 
+Hong Kong and Macau 
+QlikTech Hong Kong Limited 
+the Governing Law shall be the laws of Hong Kong SAR;  any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration in the Hong Kong SAR in accordance with the laws of the Hong Kong SAR(**) and the arbitrators shall have the power to order, among other things, specific performance and injunctive relief. 
+	
+
+
+
+Customer Location 
+Qlik Contracting Entity 
+Governing Law 
+
+India 
+QlikTech India Pvt. Ltd. 
+the Governing Law shall be the laws of India; and 
+any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be finally resolved by arbitration conducted in accordance with the Arbitration and Conciliation Act, 1996 and any amendments thereto. (***)
+Israel 
+Qlik Analytics (ISR) Ltd 
+the Governing Law shall be the laws of Israel and 
+any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be brought before the Courts of Israel and any courts competent to hear appeals therefrom. 
+Italy 
+QlikTech Italy Srl, 
+the Governing Law shall be the laws of Italy; and 
+any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be adjudicated exclusively by the Court of Milan. 
+Japan 
+QlikTech Japan K.K. 
+the Governing Law shall be the laws of Japan; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by the Tokyo District Court. 
+Mexico 
+QlikTech Mexico, S. de R.L. de C.V. 
+the Governing Law shall be the laws of Mexico; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+Albania, Armenia, Azerbaijan, Belgium, Bosnia, Herzegovina, Bulgaria, Croatia/Hrvatska, Czech Republic, Georgia, Hungary, Kazakhstan, Kosovo, Luxembourg, Macedonia, Republic of Moldova, Montenegro, Netherlands, Romania, Serbia, Slovak Republic, 
+Slovenia, Turkey, Ukraine or Uzbekistan 
+QlikTech Netherlands B.V. 
+the Governing Law shall be the laws of the Netherlands; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the SGOA (the Dutch Foundation of the Settlement of Automation Disputes) in The Hague. 
+New Zealand 
+QlikTech New Zealand Limited 
+the Governing Law shall be the laws of New Zealand; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be brought before the Courts of New Zealand and any courts competent to hear appeals therefrom. 
+People's Republic of China ("PRC") 
+Qlik Technology (Beijing) Limited Liability Company 
+the Governing Law shall be the laws of China; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the China International Economic and Trade Arbitration Commission (CIETAC). (*****) 
+Brunei, Darussalam, Cambodia, East 
+	Timor, 	Indonesia, 	Lao 	People's 
+Democratic Republic, Mongolia, Myanmar (Burma), Philippines, Singapore, Thailand, Vietnam  
+QlikTech Singapore Pte. Ltd. 
+the Governing Law shall be the laws of Singapore; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) shall be determined by arbitration in Singapore in accordance with the UNCITRAL Arbitration Guide in force from time to time, and the law governing the agreement contained in this Section (ii), the arbitration, and the conduct and procedure of the arbitration, shall be the laws of Singapore. (****) 
+South Korea 
+QlikTech Hong Kong Limited 
+the Governing Law shall be the laws of South Korea; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be brought before the Courts of the Seoul District Court and any courts competent to hear appeals therefrom. 
+Spain, Portugal or Andorra 
+QlikTech Iberica S.L. 
+the Governing Law shall be the laws of Spain; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled exclusively by the Courts of the city of Madrid, Spain. 
+
+
+
+Customer Location 
+Qlik Contracting Entity 
+Governing Law 
+Argentina, Aruba, Belize, Bermuda, 
+Bolivia, Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, El 
+Salvador, Guatemala, Honduras, 
+Nicaragua, Panama, Peru, Uruguay, 
+Venezuela 
+QlikTech LATAM AB 
+the Governing Law shall be the laws of Sweden; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+Sweden 
+QlikTech Nordic AB 
+the Governing Law shall be the laws of Sweden; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be settled by arbitration at the Arbitration Institute of the Stockholm Chamber of Commerce(*) in Stockholm. 
+United Kingdom, Ireland,or Gibraltar 
+QlikTech UK Limited 
+the Governing Law shall be the laws of England & Wales; and any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) will be adjudicated by the courts of England and Wales. 
+United States, Puerto Rico, Jamaica, Virgin Islands (US) or Haiti 
+QlikTech Inc. 
+the Governing Law shall be the laws of the Commonwealth of Pennsylvania, USA; and 
+any suit, action or proceeding arising out of or relating to this Agreement (including any non-contractual dispute or claim) shall be settled by, and only by, the Court of Common Pleas of Montgomery County, Pennsylvania or the United States District Court for the Eastern District of Pennsylvania. 
+(*) Where the amount in dispute clearly does not exceed EUR 300,000, the Stockholm Chamber of Commerce (SCC) Institute's Guide for Expedited Arbitration shall apply and the arbitral tribunal shall be composed of a sole arbitrator. Where the amount in dispute clearly exceeds the amount set forth above, the Guide of the SCC Institute shall apply and the arbitral tribunal shall be composed of three arbitrators. The arbitration proceedings shall be conducted in English. The parties shall bear their own costs and expenses, including attorneys' fees, but the arbitrator may, in the award, allocate all of the administrative costs of the arbitration, including the fees of the arbitrators, against the Party that did not prevail. The decision of the arbitrator shall be final and binding upon both Parties and shall be enforceable in any court of law. 
+
+(**) The arbitration shall be administered by the Hong Kong International Arbitration Centre ("HKIAC") pursuant to its rules and procedures. There shall be three (3) arbitrators. One arbitrator shall be appointed by Qlik. One arbitrator shall be appointed by Customer. The third arbitrator shall be agreed between the Parties, and failing agreement, or if the arbitrator selected is unable or is unwilling to act, the appointing authority shall be the HKIAC. The arbitration proceedings shall be conducted in English. The parties shall bear their own costs and expenses, including attorneys' fees, but the arbitrators may, in the award, allocate all of the administrative costs of the arbitration, including the fees of the arbitrators, against the Party that did not prevail. The decision of the arbitrators shall be final and binding upon both Parties and shall be enforceable in any court of law. 
+(***) The arbitration shall be conducted before a panel of three arbitrators, selected as follows: one arbitrator shall be nominated by Customer; one arbitrator shall be nominated by Qlik; and the third arbitrator shall be jointly nominated by the two arbitrators so nominated. The place of arbitration shall be Mumbai. The arbitration proceedings shall be conducted in English. The arbitrator's award shall be substantiated in writing. The Parties shall bear their own costs and expenses including attorney's fees, but the court of arbitration may decide to allocate all of the administrative costs of the arbitration, including the fees of the arbitrator, against the Party that did not prevail. The decision of the arbitrator shall be final and binding upon both Parties and shall be enforceable in any court of law. 
+
+(****) The arbitration shall be administered by the Singapore International Arbitration Centre ("SIAC"). There shall be one arbitrator. The arbitrator shall be agreed between the Parties. Failing agreement, or if the arbitrator selected is unable or is unwilling to act, the appointing authority shall be the SIAC. The arbitration proceedings shall be conducted in English. The Parties shall bear their own costs and expenses, including attorneys' fees, but the arbitrator may, in the award, allocate all of the administrative costs of the arbitration, including the fees of the arbitrator, against the Party that did not prevail. The arbitrator shall have the power to order, among other things, specific performance and injunctive relief. The decision of the arbitrator shall be final and binding upon both Parties and shall be enforceable in any court of law. 
+
+(*****) The arbitration shall be administered by the China International Economic and Trade Arbitration Commission (CIETAC) pursuant to its rules and procedures. There shall be three (3) arbitrators. Each Party will appoint one arbitrator each. The third arbitrator shall be agreed between the Parties, and failing agreement, or if the arbitrator selected is unable or unwilling to act, the appointing authority shall be the CIETAC. The arbitration proceedings shall be conducted in English. The Parties shall bear their own costs and expenses, including attorneys' fees, but the arbitrators may, in the award, allocate all of the administrative costs of the arbitration, including the fees of the arbitrators, against the Party who did not prevail. The decision of the arbitrators shall be final and binding upon both Parties and shall be enforceable in any court of law. Notwithstanding anything to the contrary in this Agreement, either Party may at any time seek injunctive or interlocutory relief in a court of competent jurisdiction in order to protect any urgent interest of such Party. 
+
+
+
+                                                                                                                                                                  
+QLIK CUSTOMER AGREEMENT - ADDENDUM 1
+(FOR CUSTOMERS IN GERMANY, AUSTRIA AND AUSTRALIA)
+
+This Addendum to the Qlik User License Agreement ("Agreement") shall apply to Customers who purchase or subscribe to Qlik Products and have a contract address in Germany, Austria and Australia. In the event of any conflict, the terms of this Addendum 1 supersede any conflicting
+
+terms in the Agreement.
+
+1. 	Customers in Germany or Austria 
+The terms in this Section 1 are applicable to any Customer who obtains its license key(s) from QlikTech GmbH, or is subject to the governing laws of Germany as set forth in Table 1 of this Agreement; and designates an address on an Order Form in Germany or Austria. 
+
+1.1. Limited Warranty. With regard to perpetual Software licenses issued under this Agreement, the first three sentences of Section II, 9.1 of the Agreement shall not apply. Instead, the following limited warranty shall apply: Qlik warrants that the initial version of the Software delivered hereunder (but excluding any updates thereto provided as a result of Support) provides the functionalities set forth in the Documentation (the "agreed upon functionalities") for the limited warranty period following the Delivery Date when used on the recommended hardware configuration. As used in this Section, "limited warranty period" means one (1) year. Nonsubstantial variation from the agreed upon functionalities shall not be considered and does not establish any warranty rights. To make a warranty claim, Customer must notify Qlik in writing during the limited warranty period. If the functionalities of the Software 	vary 	substantially 	from 	the 	agreed 	upon functionalities, Qlik shall be entitled, by way of re-performance and at its own discretion, to repair or replace the Software. If this fails, Customer is entitled to cancel the purchase agreement (rescission). 
+ 
+1.2. Limited Subscription Warranty. With regard to subscriptions issued under this Agreement, the following limited warranty shall apply: 
+ 
+1.2.1 The Parties agree and acknowledge that the Qlik Products are provided "without warranty of any kind, express or implied, including but not limited to, the implied warranties of merchantability, satisfactory quality, and fitness for a particular purpose, whereas Qlik shall remedy any defects in kind as part of its ongoing support obligations which are included and fully compensated by the support fee. Further, Qlik and its vendors disclaim any warranty that Customer's use of the Qlik Products will be uninterrupted or error free. Qlik does not warrant or guarantee that it will correct any errors or inaccuracies in GeoAnalytics or Geocoding data. Customer's use of the Qlik Products is solely at its own risk. 
+ 
+1.2.2 The Parties agree and acknowledge that the following modifications of Customer's statutory warranty rights shall apply: 
+Qlik shall have no liability for initial material defects of the Software (Sachmangel) regardless of whether they have been caused by Qlik's fault (verschuldensunabhangig); Customer's: (i) right of reduction (Minderung), (ii) setoff and (iii) retention shall be excluded unless, as regards to (ii) and (iii), Customer asserts such rights on the basis of claims that have been asserted by a final court judgment; 
+
+Any warranty claims of Customer against Qlik shall become time-barred 12 months after the start of the statutory warranty period; and for the avoidance of doubt, the Parties agree and acknowledge no further warranty period shall apply in regard to updates or upgrades to the Software that Qlik provides during the initial or any renewal term of the subscription licenses. Any damage claim Customer has under an applicable warranty shall be limited by the limitation of liability provision set forth under Section 5 of this Agreement. 
+
+Any damage claim Customer has under an applicable warranty shall be limited by the limitation of liability provision set forth under Section 5 of this Agreement. 
+ 
+THE LIMITED WARRANTIES IN SECTIONS 1.1 AND 1.2 OF THIS ADDENDUM DO NOT APPLY TO SOFTWARE OR SERVICES PROVIDED TO CUSTOMER FREE OF CHARGE, OR SOFTWARE THAT HAS BEEN ALTERED BY CUSTOMER, OR TO UPDATES PROVIDED UNDER SUPPORT, TO THE EXTENT SUCH ALTERATIONS CAUSED A DEFECT. 
+ 
+Third Party Intellectual Property Infringement Indemnification in Germany or Austria. 
+
+Section 4 is supplemented by the following additional sentence: CUSTOMER'S STATUTORY CLAIMS FOR DAMAGES SHALL REMAIN UNAFFECTED, PROVIDED, HOWEVER; THAT ANY SUCH CLAIMS SHALL BE LIMITED BY THE LIMITATION OF LIABILITY AS SET FORTH HEREUNDER.  SECTION 1 OF THIS ADDENDUM AND SECTION 4 OF THE AGREEMENT 	STATE 	QLIK'S 	SOLE 	AND ENTIRE OBLIGATION AND LIABILITY, AND CUSTOMER'S SOLE AND EXCLUSIVE RIGHT AND REMEDY, FOR INFRINGEMENT OR VIOLATION OF INTELLECTUAL PROPERTY RIGHTS. 
+ 
+Limitation of Liability. Sections 5.1 to 5.3 of the Agreement are not applicable. Instead, subject to the provisions below, Qlik's statutory liability for damages shall be limited as follows: 
+ 
+Qlik shall be liable only up to the amount of damages as typically foreseeable at the time of entering into the purchase agreement in respect of damages caused by a slightly negligent breach of a material contractual obligation (i.e. a contractual obligation the fulfilment of which is essential for the proper execution of this Agreement, the breach of which endangers the purpose of this Agreement and on the fulfilment of which Customer regularly relies). 
+ 
+Qlik shall not be liable for damages caused by a slightly negligent breach of a non-material contractual obligation. The aforesaid limitation of liability shall not apply to any mandatory statutory liability, in particular to liability under the German Product Liability Act, liability for assuming a specific guarantee, liability for damages caused by willful misconduct or gross negligence, or any kind of willfully or negligently caused personal injuries, death or damages to health. 
+ 
+Customer shall take all reasonable measures to avoid and reduce damages, in particular, to make back-up copies of data on a regular basis and to carry out security checks for the purpose of defending or detecting viruses and other disruptive programs within Customer's IT system. 
+ 
+Regardless of the grounds giving rise to liability, Qlik shall not be liable for indirect and/or consequential damages, including loss of profits or interest, unless such damage has been caused by Qlik's willful misconduct or gross negligence. 
+ 
+To the extent Qlik's liability is limited or excluded, the same shall apply in respect of any personal liability of Qlik's legal representatives, employees, suppliers, resellers and vicarious agents. 
+ 
+Section 8.1 of the Agreement shall be amended as follows: For customers with perpetual licenses, only the right to receive Support will end upon termination of the Agreement. The Parties also agree to exclude the applicability of Section 580a German Civil Code for Qlik Products. Furthermore, the Parties agree that unless otherwise agreed between the Parties, subscriptions shall automatically renew for successive terms equal to the initial subscription period, however not for longer periods than 24 months. For clarity, Customers with multi-year subscriptions, which are auto renewed, may terminate such renewal only after 24 months, unless otherwise agreed by the Parties in writing. 
+ 
+If a Customer subscribes to Qlik Cloud, Qlik's Service Level Agreement shall be amended to include the following sentence: IN ADDITION, STATUTORY DAMAGES SHALL REMAIN UNAFFECTED, PROVIDED, HOWEVER, THAT ANY SUCH CLAIMS SHALL BE LIMITED BY THE LIMITATION OF LIABILITY AS SET FORTH IN THE AGREEMENT (LESS THE VALUE OF ANY SERVICE CREDITS PAID BY QLIK IN RESPECT OF THE RELEVANT QUARTER). 
+ 
+Qlik Cloud Warranty. Section 12.1 of the Agreement shall be amended to include the following additional sentence: 
+IN ADDITION, STATUTORY DAMAGES SHALL REMAIN UNAFFECTED, PROVIDED, HOWEVER; THAT ANY SUCH CLAIMS SHALL BE LIMITED BY THE LIMITATION OF LIABILITY AS SET FORTH IN THE AGREEMENT (LESS THE VALUE OF ANY SERVICE CREDITS PAID BY QLIK IN RESPECT OF THE RELEVANT QUARTER). 
+
+2. 	Customers in Australia 
+ 
+The terms in this Section 2 are applicable to any Customer who obtains its license key(s) from QlikTech Australia Pty Ltd or is subject to the governing law of Australia as set forth in Table 1 of this Agreement; and designates an address on an Order Form in Australia. 
+ 
+2.1. Warranties Limitations and Disclaimers for Customers in Australia.  If Customer is a "consumer" under the Competition and Consumer Act 2010 (Cth), then: (a) Customer's rights under Section 3 or 9 of the Agreement are separate and additional to any warranties or consumer guarantees that cannot be excluded under Australian law (including, without limitation, consumer guarantees as to title and acceptable quality under the Competition And Consumer Act) ("Non-Excludable Rights"); the limitations, exclusions and disclaimers contained in this Agreement shall not be apply to the extent that they purport to exclude any Non Excludable Rights; and (b) with respect to claims relating to breach of any Non Excludable Rights, the liability of Qlik is limited (where Qlik is authorized by law to do so) at Qlik's option to any one of resupplying, replacing or repairing, or paying the cost of resupplying, replacing or repairing the goods in respect of which the breach occurred, or resupplying or paying the cost of resupplying, the services in respect of which the breach occurred. 
+
+
+
+

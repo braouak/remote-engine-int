@@ -1,0 +1,8 @@
+{
+  "logMessage": {"$resolver": "message", "stringified": true},
+  "logTimestamp": {"$resolver": "timestamp", "epoch": {"unit": "millis", "rounded": true}},
+  "severity": {"$resolver": "level", "field": "name"},
+  "ticLogLevel": {"$resolver": "mdc", "key": "ticLogLevel"},
+  "bundle.name": {"$resolver": "source", "field": "bundle.name"},
+  "bundle.version": {"$resolver": "source", "field": "bundle.version"}
+}

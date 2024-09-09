@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="observability-metrics-collector" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0 http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    
+
+    <feature name="observability-metrics-collector-config" version="1.2.19">
+        <!-- Collector configuration to fetch the Remote Engine context from Karaf's ConfigurationAdmin -->
+        <configfile finalname="/etc/org.talend.observability.collector.remoteenginecontext.cfg">
+            mvn:org.talend.observability.omc.collector/remote-engine-context-collector/1.2.19/cfg/configuration
+        </configfile>
+
+        <!-- Collector exposing an HTTP endpoint called by artifacts & RE agents to send their metrics -->
+        <configfile finalname="/etc/org.apache.karaf.decanter.collector.rest.servlet.cfg">
+            mvn:org.talend.observability.omc/cloudevent-metricset-unmarshaller/1.2.19/cfg/configuration
+        </configfile>
+
+        <!-- Cache for metrics which are exposed to the APM -->
+        <configfile finalname="/etc/org.talend.observability.omc.cache.apm.cfg">
+            mvn:org.talend.observability.omc/apm-metrics-cache/1.2.19/cfg/configuration
+        </configfile>
+
+        <!-- APM appender collection and filter metrics put in cache -->
+        <configfile finalname="/etc/org.talend.observability.omc.appender.apm.cfg">
+            mvn:org.talend.observability.omc/apm-metrics-appender/1.2.19/cfg/configuration
+        </configfile>
+
+        <!-- OSHI collector configuration (by default the scheduler send event every 1 sec) -->
+        <configfile finalname="/etc/org.talend.observability.collector.oshi.cfg">
+            mvn:org.talend.observability.omc.collector/oshi/1.2.19/cfg/configuration
+        </configfile>
+
+        <!-- HTTP token configuration -->
+        <configfile finalname="/etc/org.talend.observability.http.security.cfg">
+            mvn:org.talend.observability.omc.appender/security/1.2.19/cfg/configuration
+        </configfile>
+    </feature>
+
+    <feature name="observability-metrics-common" version="1.2.19">
+        <bundle>mvn:org.apache.commons/commons-lang3/3.14.0</bundle>
+
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.17.1</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.17.1</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.17.1</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.17.1</bundle>
+
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.16</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.14</bundle>
+
+        <bundle>mvn:org.talend.observability/observability-metrics-common/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-metrics-collector" version="1.2.19">
+        <!-- Karaf built-in features we depend on -->
+        <feature>scheduler</feature>
+        <feature>http</feature>
+
+        <!-- Feature REST Collector -->
+        <feature version="2.10.0">decanter-collector-rest-servlet</feature>
+
+        <feature prerequisite="true">observability-metrics-collector-config</feature>
+
+        <feature>observability-metrics-common</feature>
+        <bundle>mvn:org.talend.observability.omc/cloudevent-metricset-unmarshaller/1.2.19</bundle>
+
+        <!-- Collector listening to changes in the remote engine configuration-->
+        <bundle>mvn:org.talend.observability.omc.collector/remote-engine-context-collector/1.2.19</bundle>
+
+        <!-- Processor which collect data from collectors -->
+        <bundle>mvn:org.talend.observability.omc.processor/metrics-enrichment-processor/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-collector-oshi" version="1.2.19">
+        <feature>observability-metrics-collector</feature>
+        <!-- Collector OSHI-->
+        <bundle dependency="true">mvn:net.java.dev.jna/jna/5.14.0</bundle>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna-platform/5.14.0</bundle>
+        <bundle dependency="true">mvn:com.github.oshi/oshi-core/6.6.1</bundle>
+        <bundle>mvn:org.talend.observability.omc.collector/oshi/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-apm" version="1.2.19">
+        <feature>observability-metrics-collector</feature>
+        <bundle>mvn:org.talend.observability.omc/apm-metrics-cache/1.2.19</bundle>
+        <!-- Appender filtering out and caching metrics exposed to the APM -->
+        <bundle>mvn:org.talend.observability.omc/apm-metrics-appender/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-appender-prometheus" version="1.2.19">
+        <feature>observability-apm</feature>
+        <!-- Appender which exposes metrics as Prometheus format -->
+        <bundle dependency='true'>mvn:io.prometheus/simpleclient/0.9.0</bundle>
+        <bundle dependency='true'>mvn:io.prometheus/simpleclient_common/0.9.0</bundle>
+        <bundle>mvn:org.talend.observability.omc.appender/prometheus-appender/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-appender-rest" version="1.2.19">
+        <feature>observability-apm</feature>
+        <!-- Appender which exposes metrics as JSON on a REST endpoint -->
+        <bundle>mvn:org.talend.observability.omc.appender/rest-appender/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-vault-client" version="1.2.19">
+        <feature>observability-metrics-common</feature>
+        <!-- Client communicating with vault and implicitly handling token accessor lifecycle -->
+        <bundle>mvn:org.talend.observability.omc.appender/vault-client/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-component-metrics" version="1.2.19">
+        <!-- Cloud Event Processor bundle configuration -->
+        <configfile finalname="/etc/org.talend.observability.omc.processor.cloud.event.cfg">
+            mvn:org.talend.observability.omc.processor/cloud-event-processor/1.2.19/cfg/configuration
+        </configfile>
+
+        <feature>observability-metrics-common</feature>
+        <feature>observability-vault-client</feature>
+
+        <!-- Processor which collect data from metrics-enrichment-processor and prepare it for groupBy processor -->
+        <bundle>mvn:org.talend.observability.omc.processor/metrics-transform-processor/1.2.19</bundle>
+
+        <!-- Processor which build and serialize metric using schema-->
+        <bundle>mvn:org.apache.commons/commons-compress/1.26.2</bundle>
+        <bundle>mvn:org.apache.avro/avro/1.11.3</bundle>
+        <bundle>mvn:org.talend.observability.omc.processor/cloud-event-processor/1.2.19</bundle>
+
+        <!-- Appender which exposes metrics to Kafka-->
+        <bundle>mvn:org.talend.observability.omc.appender/tcp-appender/1.2.19</bundle>
+    </feature>
+
+    <feature name="observability-feature-manager" version="1.2.19">
+        <feature>scr</feature>
+        <feature>observability-component-metrics</feature>
+        <bundle>mvn:org.talend.observability.omc/feature-manager/1.2.19</bundle>
+    </feature>
+
+</features>
